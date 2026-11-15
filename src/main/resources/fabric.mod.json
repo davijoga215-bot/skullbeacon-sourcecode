@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "skullbeacon",
+  "version": "${version}",
+  "name": "Skull Beacon",
+  "description": "Marks your death spot with a floating, see-through-walls skull, shows the distance and posts the coordinates in chat, with click-to-teleport in Creative mode.",
+  "authors": ["Davi Player"],
+  "license": "MIT",
+  "icon": "assets/skullbeacon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.skullbeacon.SkullBeaconClient"],
+    "modmenu": ["com.example.skullbeacon.ModMenuIntegration"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
